@@ -83,7 +83,7 @@ Este exercício tem como objetivo familiarizar você com os conceitos e comandos
 2. **Descreva o PR:**
    - No PR, descreva as alterações feitas e por que elas devem ser mescladas na branch principal.
 
-### 6. Revisão do Exercício
+### 7. Revisão do Exercício
 - **Verifique as mudanças:**
    - Veja as alterações que foram mescladas na branch principal.
    - Discutir possíveis problemas e soluções.
