@@ -1,7 +1,3 @@
-Aqui está um exemplo de README.md que você pode usar para o exercício prático:
-
----
-
 # Exercício Prático: Introdução ao Git
 
 ## Objetivo
@@ -18,14 +14,32 @@ Este exercício tem como objetivo familiarizar você com os conceitos e comandos
    ```
    Isso criará um repositório Git vazio no diretório atual.
 
-### 2. Criar uma Branch e Fazer um Commit
+### 2. Criar a Branch principal
+1. **Crie uma nova branch chamada `main`:**
+   ```bash
+   git checkout -b main # ou git checkout -b master
+   ```
+   Agora, você está trabalhando na branch `main`.
+
+### 3. Publicar o Repositório em uma Plataforma de Hospedagem
+1. **Crie um novo repositório no GitHub/GitLab:**
+   - Acesse GitHub/GitLab e crie um novo repositório.
+   - Copie o URL do repositório remoto.
+
+2. **Adicione o repositório remoto:**
+   ```bash
+   git remote add origin <URL-do-repositório>
+   ```
+
+3. **Envie as alterações para o repositório remoto:**
+   ```bash
+   git push -u origin main  # ou git push -u origin master
+   ```
+
+### 4. Criar uma Branch e Fazer um Commit
 1. **Crie uma nova branch chamada `feature-x`:**
    ```bash
-   git branch feature-x
-   ```
-   2. **Mude para a branch `feature-x`:**
-   ```bash
-   git checkout feature-x
+   git checkout -b feature-x
    ```
    Agora, você está trabalhando na branch `feature-x`.
 
@@ -46,10 +60,10 @@ Este exercício tem como objetivo familiarizar você com os conceitos e comandos
 
 4. **Faça o commit das alterações:**
    ```bash
-   git commit -m "Adiciona README.md na branch feature-x"
+   git commit -m "Adiciona README.md"
    ```
 
-### 3. Mesclar a Branch `feature-x` na Branch Principal
+### 5. Mesclar a Branch `feature-x` na Branch Principal
 1. **Volte para a branch principal (`main` ou `master`):**
    ```bash
    git checkout main  # ou git checkout master
@@ -62,22 +76,7 @@ Este exercício tem como objetivo familiarizar você com os conceitos e comandos
 
    Isso integrará as alterações da branch `feature-x` na branch principal.
 
-### 4. Publicar o Repositório em uma Plataforma de Hospedagem
-1. **Crie um novo repositório no GitHub/GitLab:**
-   - Acesse GitHub/GitLab e crie um novo repositório.
-   - Copie o URL do repositório remoto.
-
-2. **Adicione o repositório remoto:**
-   ```bash
-   git remote add origin <URL-do-repositório>
-   ```
-
-3. **Envie as alterações para o repositório remoto:**
-   ```bash
-   git push -u origin main  # ou git push -u origin master
-   ```
-
-### 5. Criar um Pull Request (PR)
+### 6. Criar um Pull Request (PR)
 1. **No GitHub/GitLab, crie um Pull Request:**
    - Acesse o repositório remoto e crie um PR da branch `feature-x` para a branch principal.
 
